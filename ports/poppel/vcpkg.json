@@ -1,0 +1,17 @@
+{
+    "name": "poppel",
+    "version": "0.0.0",
+    "description": "Data serialization format Poppel",
+    "homepage": "https://github.com/poppel-format/poppel-cpp",
+    "dependencies": [
+        "nlohmann-json",
+        {
+            "name": "vcpkg-cmake",
+            "host": true
+        },
+        {
+            "name": "vcpkg-cmake-config",
+            "host": true
+        }
+    ]
+}
