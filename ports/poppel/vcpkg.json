@@ -1,6 +1,6 @@
 {
     "name": "poppel",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Data serialization format Poppel",
     "homepage": "https://github.com/poppel-format/poppel-cpp",
     "dependencies": [
