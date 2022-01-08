@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO poppel-format/poppel-cpp
-    REF 8720fa3897eb4dcf38bcf0ec10e16350bcdf2d82
-    SHA512 5f288fc1f6f274d9e0006cc1acb9c2b7a734937b4fffd30475bff3252db4358079d4b03a4427429d20692109c8ae00c07dcbd3d9c5ea2cc36d51d664c9d158da
+    REF f392e195314beba0cab8f9b739a3f4beb6da476d
+    SHA512 eabdeec2b1a43817770495b5fb0827d4fe812c96d83754e076aecfe4cd3fb5f3f54292f2acdf79bd18a56c71122c6112fc27c8172b62db225c285aa73934ec6d
     HEAD_REF master
 )
 
@@ -16,9 +16,8 @@ vcpkg_cmake_config_fixup(PACKAGE_NAME poppel CONFIG_PATH lib/cmake/poppel)
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
-# TODO: uncomment following lines when LICENSE is added.
-# file(
-#     INSTALL "${SOURCE_PATH}/LICENSE"
-#     DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}"
-#     RENAME copyright
-# )
+file(
+    INSTALL "${SOURCE_PATH}/LICENSE"
+    DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}"
+    RENAME copyright
+)
